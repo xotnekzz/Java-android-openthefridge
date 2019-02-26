@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5292cf</item>
+        <!-- 앱바랑 탭 색 -->
+        <item name="colorPrimaryDark">#5292cf</item>
+        <!-- 상단바 -->
+        <item name="colorAccent">#5292cf</item>
+        <!-- 탭 그림자 색 -->
+
+    </style>
+    <!-- textColorPrimary(앱바에 써있는 글씨 색) -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MapButton" parent="AppTheme">
+        <item name="colorAccent">#5292cf</item></style>
+    <!-- 플로팅버튼 - 테마 배경색 -->
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <!-- tab 스타일 설정부분 사이즈/ 선택되지않은 탭 글자색-->
+
+
+
+</resources>

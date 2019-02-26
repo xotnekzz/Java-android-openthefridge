@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arexdate">
+        <item>1일전</item>
+        <item>2일전</item>
+        <item>3일전</item>
+        <item>5일전</item>
+        <item>7일전</item>
+        <item>10일전</item>
+    </string-array>
+</resources>

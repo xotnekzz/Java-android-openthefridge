@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_refigearator"
+            android:icon="@drawable/ic_menu_managment"
+            android:title="냉장고 관리" />
+        <item
+            android:id="@+id/nav_expirationdate"
+            android:icon="@drawable/ic_menu_time"
+            android:title="유통기한" />
+        <item
+            android:id="@+id/nav_recipe"
+            android:icon="@drawable/ic_menu_recipe"
+            android:title="레시피" />
+        <item
+            android:id="@+id/nav_shoppinglist"
+            android:icon="@drawable/ic_menu_shopping"
+            android:title="쇼핑리스트"/>
+        <item
+            android:id="@+id/nav_hazardfood"
+            android:icon="@drawable/ic_menu_info"
+            android:title="건강정보"/>
+        <item
+            android:id="@+id/nav_memo"
+            android:icon="@drawable/ic_note_add"
+            android:title="메모"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="설정"/>
+    </group>
+</menu>

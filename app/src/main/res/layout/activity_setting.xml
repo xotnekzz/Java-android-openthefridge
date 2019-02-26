@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="알림 형태"
+            android:background="#dddddd"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_span="2"
+                android:text="알림시간"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/ettime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnClicked"
+                android:inputType="date"
+                android:text="시간" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_span="2"
+                android:text="알림일자"
+                android:textSize="18dp"/>
+
+            <Spinner
+                android:id="@+id/spdate"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="푸시알림"
+                android:textSize="18dp" />
+
+            <ToggleButton
+                android:id="@+id/pushonoff"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

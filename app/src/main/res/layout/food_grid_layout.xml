@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/gridview"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/fivimage"
+        android:layout_width="80dp"
+        android:layout_height="76dp" />
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="17dp"
+        android:id="@+id/ftvdday"
+        android:textColor="#5292cf"
+        android:textAlignment="center"
+        android:background="@drawable/textview2"
+        android:padding="-1dp"
+        android:layout_marginLeft="16dp"
+        android:text="d"
+        android:layout_alignBottom="@id/fivimage"
+
+      />
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftvname"
+        android:textSize="13dp"
+        android:textColor="#FF6E6F70"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="1" />
+
+
+
+</LinearLayout>

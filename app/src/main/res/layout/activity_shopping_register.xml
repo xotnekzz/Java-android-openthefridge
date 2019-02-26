@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:stretchColumns="1"
+            android:layout_marginTop="7pt">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:layout_weight = "1">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="분류" />
+
+                <Spinner
+                    android:id="@+id/cbFoodType"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="이름" />
+
+                <EditText
+                    android:id="@+id/etsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="메모" />
+
+                <EditText
+                    android:id="@+id/etsmemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#dddddd"
+        android:text="유통기한 임박 식재료"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/gvExFood"
+        android:numColumns="3"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="8dp">
+    </GridView>
+</RelativeLayout>

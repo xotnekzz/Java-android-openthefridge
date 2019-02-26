@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#5292cf">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/login_intro" />
+</LinearLayout>
+    <TableLayout
+        android:paddingTop="15dp"
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="7dp"
+                android:text="IP"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="냉장고 서버의 IP주소를 입력하세요." />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="7dp"
+                android:text="Port"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록하기"
+        android:layout_gravity="right">
+
+    </Button>
+</LinearLayout>
